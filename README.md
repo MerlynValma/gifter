@@ -5,8 +5,19 @@
 Users can setup birhday events and invite users to plan for gifts. 
 
 Event creator has admin password which offers additional event settings like:
-├─ Set event name
-├─ Set 
+├─┬ Event creator
+│ ├─ Set event name
+│     └─ Generate new event page
+│     └─ Landing message visible without login
+│ ├─ Set event date
+│ ├─ Set number of participants by name
+│     └─ Generate unique password for each user event access
+│     └─ Email event link
+│ ├─
+│ ├─
+│ ├─
+│ ├─
+├─┬ 
 ```
 
 ###
