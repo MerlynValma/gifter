@@ -10,7 +10,7 @@
       </h9>
     </div>
     <div class="row">
-      <div class="col-sm-6">
+      <div class="col-sm-4">
         <NotesList
             @app-addNote="addNote"
             @app-changeNote="changeNote"
@@ -142,6 +142,6 @@ export default {
 <style>
 #app {
   text-align: center;
-  max-width: 700px;
+  max-width: 1000px;
 }
 </style>
