@@ -5,8 +5,8 @@
 Users can setup birhday events and invite users to plan for gifts. 
 
 Event creator has admin password which offers additional event settings like:
-├─┬ Event creator
-│ ├─ Set event name
+├─┬─ Event creator
+│ ├── Set event name
 │     └─ Generate new event page
 │     └─ Landing message visible without login
 │ ├─ Set event date
@@ -17,7 +17,8 @@ Event creator has admin password which offers additional event settings like:
 │ ├─
 │ ├─
 │ ├─
-├─┬ 
+├─┬─ Event participant
+  ├─ Get email invite link with password https://www.freecodecamp.org/news/send-emails-from-your-vue-application/
 ```
 
 ###
