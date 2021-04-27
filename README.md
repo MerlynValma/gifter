@@ -15,8 +15,8 @@ Users can setup birhday events and invite users to plan for gifts.
 │     ├── Create event
 │     │    └─ Use Oauth to verify login
 │     │     └─ Generate new event page (unique url)
-│     ├── Set event theme
-│     │    └─ event tame visible on landing page when not logged in
+│     ├── Set event theme (custom message)
+│     │    └─ event theme visible on landing page when not logged in
 │     ├── Set event name
 │     │    └─ Generate new event page
 │     │    └─ Landing message visible without login
