@@ -8,7 +8,7 @@ https://gifter-b50fc-default-rtdb.firebaseio.com/
 
 ## Site function
 ```
-Users can setup birhday events and invite users to plan for gifts. 
+Users can setup birthday events and invite users to organize (choose) gifts. 
 
 
 ├─── Event creator
@@ -17,13 +17,16 @@ Users can setup birhday events and invite users to plan for gifts.
 │     │     └─ Generate new event page (unique url)
 │     ├── Set event theme (custom message)
 │     │    └─ event theme visible on landing page when not logged in
-│     ├── Set event name
-│     │    └─ Generate new event page
+│     ├── Set event name and landing message
 │     │    └─ Landing message visible without login
 │     ├─ Set event date
+|     ├─ Set gift list
+│     │   └─ For each gift set name, description and number available (can be unlimited)
 │     ├─ Set number of participants by name
-│     │   └─ Generate unique password for each user event access
-│     │   └─ Email event link
+│     │   └─ Use unique url for all users to access event and gift list
+│     │       └─ Edit options visible when creator has logged-in
+│     │       └─ When gift is choosen and 0 left, then will not be visible anymore
+│     │   └─ Email event link and link for copying
 │     ├─ Delete event
 │     │   └─ Ask are you sure
 │         └─ Replace event page with landing page (deleted) on same url
@@ -31,7 +34,10 @@ Users can setup birhday events and invite users to plan for gifts.
 │ 
 │ 
 └──┬─ Event participant
-   ├─ Get email invite link with password 
+   ├─ Get email invite link with unique url to the event
+   ├─ Choose the gift
+   ├─ Get (email) verification of the gift chosen and event
+   
 ```
 
 ## Site layout
