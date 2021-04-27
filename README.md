@@ -11,22 +11,27 @@ https://gifter-b50fc-default-rtdb.firebaseio.com/
 Users can setup birhday events and invite users to plan for gifts. 
 
 
-├─────┬─ Event creator
+├─── Event creator
 │     ├── Create event
 │     │    └─ Use Oauth to verify login
+      │     └─ Generate new event page (unique url)
+      ├── Set event theme
+│     │    └─ event tame visible on landing page when not logged in
 │     ├── Set event name
 │     │    └─ Generate new event page
 │     │    └─ Landing message visible without login
 │     ├─ Set event date
 │     ├─ Set number of participants by name
-│         └─ Generate unique password for each user event access
-│         └─ Email event link
+│     │   └─ Generate unique password for each user event access
+│     │   └─ Email event link
+│     ├─ Delete event
+│     │   └─ Ask are you sure
+│         └─ Replace event page with landing page (deleted) on same url
 │ 
 │ 
 │ 
-│ 
-└───┬─ Event participant
-    ├─ Get email invite link with password 
+└──┬─ Event participant
+   ├─ Get email invite link with password 
 ```
 https://www.freecodecamp.org/news/send-emails-from-your-vue-application/
 
@@ -36,15 +41,15 @@ https://fusionauth.io/blog/2020/08/06/securely-implement-oauth-vuejs/
 
 ## Site layout
 ```
-├─┬─ Main page
-│ ├─ Go to event
-│ ├─ Create event
-│ ├─ Login with Oauth verification (so when going to event page you are logged in)
-│     └─ track login status with cookie
+├───┬─ Main page
+│   ├─ Go to event
+│   ├─ Create event
+│   ├─ Login with Oauth verification (so when going to event page you are logged in)
+│       └─ track login status with cookie
 
-├─┬─ Event page (unique, auto generated)
-│ └─ Landing page if user is not logged in, offer log in
-│ └─
+├──── Event page (unique, auto generated)
+│       └─ Landing page if user is not logged in, offer log in
+│       └─
 ```
 
 ## Source architecture
