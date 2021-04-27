@@ -1,19 +1,21 @@
 # gifter
 
-## Project setup
-```
-npm install
-```
+###
+https://gifter-b50fc.web.app/
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+### 
+https://gifter-b50fc-default-rtdb.firebaseio.com/
 
-### Compiles and minifies for production
 ```
-npm run build
-```
+Vue.js 2 frontend
+gifter
+├─┬ vue.js 2 frontend
+│ ├── src
+│      ├─ components
+│           ├─ 
+│─┬ index (SPA)
+│ ├─ all events
+│ ├─ create event
+│ ├─ join event (password)
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+```
