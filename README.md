@@ -8,11 +8,15 @@ https://gifter-b50fc-default-rtdb.firebaseio.com/
 
 ```
 Vue.js 2 frontend
+
 gifter
-├─┬ vue.js 2 frontend
+├─┬ frontend
 │ ├── src
 │      ├─ components
-│           ├─ 
+│          ├─
+│
+│
+│ CLIENT
 │─┬ index (SPA)
 │ ├─ all events
 │ ├─ create event
