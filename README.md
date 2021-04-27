@@ -1,10 +1,21 @@
 # gifter
 
+## Site function
+```
+Users can setup birhday events and invite users to plan for gifts. 
+
+Event creator has admin password which offers additional event settings like:
+├─ Set event name
+├─ Set 
+```
+
 ###
 https://gifter-b50fc.web.app/
 
 ### 
 https://gifter-b50fc-default-rtdb.firebaseio.com/
+
+## Source architecture
 
 ```
 Vue.js 2 frontend
