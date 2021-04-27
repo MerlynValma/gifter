@@ -4,7 +4,7 @@
       <h1>Gifter</h1>
     </div>
     <div style="color: black;">
-      <h5>Never have 3 toasters for your wedding. <br>Never again worry about what to give...</h5>
+      <h5>Never have 3 toasters for your wedding. <br>Never again get 5 books for your birthday.</h5>
       <h9>Event planners can create a new event (birthday, wedding etc.) and let participants know, what they would like
         to receive.
       </h9>
