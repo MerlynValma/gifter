@@ -6,7 +6,7 @@
                 <input class="form-control" type="text" v-model="note.title" placeholder="Your Name" />
             </div>
             <div class="form-group">
-                <textarea class="form-control" v-model="note.content" placeholder="Your Gift"></textarea>
+                <textarea class="form-control" v-model="note.content" placeholder="Your Gifts"></textarea>
             </div>
             <button class="btn btn-danger" @click="removeNote()">Remove from DB</button>
             <button class="btn btn-success" @click="saveNote()">Save to DB</button>

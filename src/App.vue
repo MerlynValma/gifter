@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div style="color: orangered;">
-      <h1>Gifter</h1>
+      <h1>Gifterrrrr</h1>
     </div>
     <div style="color: black;">
       <h5>Never have 3 toasters for your wedding. <br>Never again get 5 books for your birthday.</h5>
