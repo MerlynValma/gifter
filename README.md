@@ -1,5 +1,6 @@
 # gifter
 
+## Site function
 ```
 Users can setup birhday events and invite users to plan for gifts. 
 
@@ -13,6 +14,8 @@ https://gifter-b50fc.web.app/
 
 ### 
 https://gifter-b50fc-default-rtdb.firebaseio.com/
+
+## Source architecture
 
 ```
 Vue.js 2 frontend
