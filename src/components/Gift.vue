@@ -12,7 +12,7 @@
             <button class="btn btn-success" @click="saveNote()">Save to DB</button>
         </div>
         <div v-else>
-            <h5>Please create new Note...</h5>
+            <h5>Please add a gift...</h5>
         </div>
         
     </div> 

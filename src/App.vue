@@ -1,5 +1,11 @@
 <template>
   <div id="app">
+
+    <app-header/>
+
+    <router-view/>
+
+
     <div style="color: orangered;">
       <h1>Gifterrrrr</h1>
     </div>
@@ -15,32 +21,34 @@
             @app-addNote="addNote"
             @app-changeNote="changeNote"
             :notes="notes"
-            :activeNote="index" />
+            :activeNote="index"/>
       </div>
       <div class="col-sm-6">
         <Note
             @app-saveNote="saveNote"
             @app-removeNote="removeNote"
-            :note="notes[index]" />
+            :note="notes[index]"/>
       </div>
     </div>
+
+    <app-footer/>
+
   </div>
 </template>
-<!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="/__/firebase/8.4.2/firebase-app.js"></script>
 
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+
 <script src="/__/firebase/8.4.2/firebase-analytics.js"></script>
 <script src="/__/firebase/8.4.1/firebase-database.js"></script>
-
 <!-- Initialize Firebase -->
 <script src="/__/firebase/init.js"></script>
 
 
 <script>
-import NotesList from "./components/NotesList.vue";
-import Note from "./components/Note.vue";
+import GiftList from "@/components/GiftList.vue";
+import Note from "@/components/Gift.vue";
+import AppHeader from "@/components/AppHeader.vue";
+import AppFooter from "@/components/AppFooter.vue";
 import firebase from "firebase/app";
 import "firebase/database";
 
@@ -55,20 +63,25 @@ var config = {
   measurementId: "G-GY089HBTM0"
 };
 firebase.initializeApp(config);
-
 const database = firebase.database();
 const notesRef = database.ref("notes");
 
 export default {
   name: "app",
   components: {
-    NotesList,
-    Note
+    NotesList: GiftList,
+    Note,
+    AppHeader,
+    AppFooter
   },
+
+
   data: () => ({
     notes: [],
     index: 0
   }),
+
+
   methods: {
     addNote() {
       this.notes.push({
@@ -77,9 +90,12 @@ export default {
       });
       this.index = this.notes.length - 1;
     },
+
+
     changeNote(index) {
       this.index = index;
     },
+
     saveNote() {
       const note = this.notes[this.index];
       if (note.id) {
@@ -88,20 +104,28 @@ export default {
         this.createNote(note);
       }
     },
+
+
     updateNote(note) {
       notesRef.child(note.id).update({
         title: note.title,
         content: note.content
       });
     },
+
+
     createNote(note) {
       note.id = notesRef.push(note).key;
     },
+
+
     removeNote() {
       const id = this.notes[this.index].id;
       notesRef.child(id).remove();
     }
   },
+
+
   created() {
     notesRef.once("value", notes => {
       notes.forEach(note => {
