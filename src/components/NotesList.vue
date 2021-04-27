@@ -1,18 +1,18 @@
 <template>
-  <div class="list">
-    <h3>List</h3>
-    <ul class="list-group">
-      <li class="list-group-item"
-          v-for="(note, index) in notes"
-          :key="note.index"
-          :class="{ 'active': index === activeNote}"
-          @click="changeNote(index)"
-      >
-        <div>{{ note.title }}</div>
-      </li>
-    </ul>
-    <button @click="addNote()" class="btn btn-info">+ Note</button>
-  </div>
+    <div class="list">
+        <h3>Birthday event #1</h3>
+        <ul class="list-group">
+            <li class="list-group-item"
+                v-for="(note, index) in notes"
+                :key="note.index"
+                :class="{ 'active': index === activeNote}"
+                @click="changeNote(index)"
+                >
+                <div>{{ note.title }}</div>
+            </li>
+        </ul>
+        <button @click="addNote()" class="btn btn-info">+ Add Person</button>
+    </div>
 </template>
 
 <script>
