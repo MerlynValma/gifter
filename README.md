@@ -14,8 +14,8 @@ Users can setup birhday events and invite users to plan for gifts.
 ├─── Event creator
 │     ├── Create event
 │     │    └─ Use Oauth to verify login
-      │     └─ Generate new event page (unique url)
-      ├── Set event theme
+│     │     └─ Generate new event page (unique url)
+│     ├── Set event theme
 │     │    └─ event tame visible on landing page when not logged in
 │     ├── Set event name
 │     │    └─ Generate new event page
@@ -33,23 +33,20 @@ Users can setup birhday events and invite users to plan for gifts.
 └──┬─ Event participant
    ├─ Get email invite link with password 
 ```
-https://www.freecodecamp.org/news/send-emails-from-your-vue-application/
-
-https://fusionauth.io/blog/2020/08/06/securely-implement-oauth-vuejs/
-
-
 
 ## Site layout
 ```
-├───┬─ Main page
-│   ├─ Go to event
-│   ├─ Create event
-│   ├─ Login with Oauth verification (so when going to event page you are logged in)
+├───┬─ Main page (index)
+│   ├─ Go to event (module on main page)
+│   ├─ Create event (module on main page)
+│   ├─ Login module with Oauth verification (so when going to event page you are logged in)
 │       └─ track login status with cookie
-
+│
 ├──── Event page (unique, auto generated)
 │       └─ Landing page if user is not logged in, offer log in
-│       └─
+│       └─ 404 if event not created
+│       └─ Landing page "deleted by user" if event was created but deleted
+├──── 404 page (redirect in 5 sec to index)
 ```
 
 ## Source architecture
@@ -71,3 +68,9 @@ gifter
 │ ├─ join event (password)
 
 ```
+
+Email sending: https://www.freecodecamp.org/news/send-emails-from-your-vue-application/
+
+Oauth use: https://fusionauth.io/blog/2020/08/06/securely-implement-oauth-vuejs/
+
+CRUD operations: https://grokonez.com/firebase/vue-js-firebase-database-example-crud-operations
