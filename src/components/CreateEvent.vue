@@ -8,43 +8,34 @@
       <br>
       <button class="btn btn-success" @click="generateUuid()">+ Create Event</button>
       <br>
-      <textarea class="form-control" v-model="id" placeholder="Your ID will show here...">{{newUuid}}</textarea>
+      <textarea class="form-control" placeholder="New random ID will show here...">{{newUuid}}</textarea>
       <br>
 
-      CURRENT INSTANCE UUID: <h6 class="uuid">{{ uuid }}</h6>
+      CURRENT INSTANCE UUID: <h6 class="uuid">{{ cuurentUuid }}</h6>
       STATIC UUID: <h6 class="uuid">{{ uuidSaved }}</h6>
       <br>
     </div>
   </div>
-
 </template>
 
-<script>
-import { uuid } from 'vue-uuid'; // uuid object is also exported to things
-// outside Vue instance.
 
-const NAMESPACE = "65f9af5d-f23f-4065-ac85-da725569fdcd";
+<script>
+import UUID from "pure-uuid";
+let uuid = new UUID (1);
 
 export default {
   data () {
-
     return {
-      NAMESPACE,
-      uuid: uuid.v1(),
-      uuidSaved: this.$uuid.v5("instanceID", NAMESPACE),
-      newUuid: ""
+     cuurentUuid: uuid,
+      newUuid: "",
+      uuidSaved: "9be9a5a0-a821-11eb-96b8-f7acec5da4bc"
     };
   },
 
   methods: {
     generateUuid(){
-      this.newUuid = uuid.v4();
+      this.newUuid = uuid;
     }
   }
-
 }
 </script>
-
-<style scoped>
-
-</style>

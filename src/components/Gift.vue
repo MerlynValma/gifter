@@ -21,7 +21,9 @@
 <script>
 export default {
   name: "Note",
+
   props: ["note"],
+
   methods: {
     saveNote() {
       this.$emit("app-saveNote");
