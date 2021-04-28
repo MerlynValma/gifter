@@ -1,6 +1,9 @@
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
+import UUID from "vue-uuid";
+
+Vue.use(UUID);
 
 Vue.config.productionTip = false
 
