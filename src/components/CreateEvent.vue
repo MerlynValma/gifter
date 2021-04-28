@@ -34,7 +34,7 @@ export default {
 
   methods: {
     generateUuid(){
-      this.newUuid = uuid;
+      this.newUuid = new UUID(1);
     }
   }
 }
