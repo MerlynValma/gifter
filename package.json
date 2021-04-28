@@ -17,7 +17,8 @@
     "pure-uuid": "^1.6.2",
     "vue": "^3.0.0",
     "vue-router": "^4.0.0-0",
-    "vuex": "^4.0.0-0"
+    "vuex": "^4.0.0-0",
+    "store": "^2.0.12"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
