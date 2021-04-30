@@ -2,12 +2,7 @@
     <div class="list">
         <h3>Birthday event #1</h3>
         <ul class="list-group">
-            <li class="list-group-item"
-                v-for="(note, index) in notes"
-                :key="note.index"
-                :class="{ 'active': index === activeNote}"
-                @click="changeNote(index)"
-                >
+            <li class="list-group-item" v-for="(note, index) in notes" :key="note.index" :class="{ 'active': index === activeNote}" @click="changeNote(index)">
                 <div>{{ note.title }}</div>
             </li>
         </ul>
@@ -18,11 +13,14 @@
 <script>
 export default {
   name: "NoteList",
+
   props: ["notes", "activeNote"],
+
   methods: {
     changeNote(index) {
       this.$emit("app-changeNote", index);
     },
+
     addNote() {
       this.$emit("app-addNote");
     }

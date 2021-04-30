@@ -15,9 +15,6 @@ Users can setup birthday events and invite users to organize (choose) gifts.
 │     ├── Create event
 │     │    └─ Use Oauth to verify login
 │     │     └─ Generate new event page (unique url)
-│     ├── Set event theme (custom message)
-│     │    └─ event theme visible on landing page when not logged in
-│     ├── Set event name and landing message
 │     │    └─ Landing message visible without login
 │     ├─ Set event date
 |     ├─ Set gift list
@@ -64,7 +61,7 @@ gifter
 ├─┬ frontend
 │ ├── src
 │      ├─ components
-│          ├─ 
+│          ├─
 │
 │
 │ CLIENT
