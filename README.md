@@ -8,7 +8,7 @@ https://gifter-b50fc-default-rtdb.firebaseio.com/
 
 ## Site function
 ```
-Users can setup birthday events and invite users to organize (choose) gifts. 
+Users can setup birthday events and invite users to organize (choose) gifts.  
 
 
 ├─── Event creator 
