@@ -11,7 +11,7 @@ https://gifter-b50fc-default-rtdb.firebaseio.com/
 Users can setup birthday events and invite users to organize (choose) gifts. 
 
 
-├─── Event creator
+├─── Event creator 
 │     ├── Create event
 │     │    └─ Use Oauth to verify login
 │     │     └─ Generate new event page (unique url)
